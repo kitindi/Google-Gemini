@@ -62,7 +62,7 @@ const Layout = () => {
             <h1 className="text-4xl font-semibold">Hi, Abdulaziz</h1>
           </div>
         ) : (
-          <div className="w-full max-w-5xl mx-auto  px-16 py-10">
+          <div className="w-full max-w-5xl mx-auto  px-16 py-8">
             <div>
               <p className="flex items-center gap-4">
                 <span>
@@ -87,16 +87,16 @@ const Layout = () => {
                     <path d="M8.5 15H15.5M8.5 10H10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                 </span>{" "}
-                <span>{recentPrompt}</span>
+                <span>{recentPrompt} ?</span>
               </p>
             </div>
-            <div className="mt-10 bg-[#f0f4f9] p-5">
+            <div className="mt-8  p-5 overflow-y-scroll max-h-[60vh]">
               <img src={gemini} alt="gminai logo" className="h-6" />
               <p className="mt-3 py-5" dangerouslySetInnerHTML={{ __html: resultData }}></p>
             </div>
           </div>
         )}
-        <div className="flex-grow px-8 flex items-end justify-center py-28">
+        <div className="flex-grow px-8 flex items-end justify-center py-10">
           <div className="flex items-center  w-[100%] px-5 py-2 md:w-[56rem] border rounded-full md:px-10 md:py-3 gap-4">
             <span className="hidden md:block bg-white p-3 rounded-full hover:bg-[#f0f4f9] hover:p-3 hover:rounded-full cursor-pointer flex justify-center items-center">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" color="#b1b3b6" fill="none">
