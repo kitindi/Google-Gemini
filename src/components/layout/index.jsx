@@ -49,6 +49,9 @@ const Layout = () => {
       </div>
       <div className="w-[100%] md:w-[85%] flex flex-col">
         <div className="flex p-8">header</div>
+        <div className="flex items-end justify-center  w-[100%] p-8 h-[60vh]">
+          <h1 className="text-4xl font-semibold">Hi, Abdulaziz</h1>
+        </div>
         <div className="flex-grow px-8 flex items-end justify-center py-28">
           <div className="flex items-center  w-[100%] px-5 py-2 md:w-[56rem] border rounded-full md:px-10 md:py-3 gap-4">
             <span className="bg-white p-3 rounded-full hover:bg-[#f0f4f9] hover:p-3 hover:rounded-full cursor-pointer flex justify-center items-center">
@@ -76,7 +79,7 @@ const Layout = () => {
                 />
               </svg>
             </span>{" "}
-            <input type="text" className="flex-grow p-3 focus:outline-none " />
+            <input type="text" className="flex-grow p-3 focus:outline-none text-lg " placeholder="Ask Gemini" />
             <span className="bg-white p-3 rounded-full hover:bg-[#f0f4f9] hover:p-3 hover:rounded-full cursor-pointer flex justify-center items-center">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" color="#b1b3b6" fill="none">
                 <path
